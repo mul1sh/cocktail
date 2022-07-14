@@ -74,11 +74,9 @@ module.exports = {
       */
     },
     rinkeby: {
-      url: "https://rinkeby.infura.io/v3/460f40a260564ac4a4f4b3fffb032dad", // <---- YOUR INFURA ID! (or it won't work)
-      //    url: "https://speedy-nodes-nyc.moralis.io/XXXXXXXXXXXXXXXXXXXXXXX/eth/rinkeby", // <---- YOUR MORALIS ID! (not limited to infura)
-      accounts: {
-        mnemonic: mnemonic(),
-      },
+      accounts: [`0x${process.env.RINKEBY_DEPLOYER_PRIV_KEY}`],
+      url: "https://eth-rinkeby.alchemyapi.io/v2/xyO7YE2XlqjFJJGMq09kD23p6T_zoRyT",
+      timeout: 2000000,
     },
     kovan: {
       url: "https://kovan.infura.io/v3/460f40a260564ac4a4f4b3fffb032dad", // <---- YOUR INFURA ID! (or it won't work)
@@ -320,6 +318,7 @@ module.exports = {
   etherscan: {
     apiKey: {
       mainnet: "DNXJA8RX2Q3VZ4URQIWP7Z68CJXQZSC6AW",
+      rinkeby: "ZUP5JE1MXE3SR95H7A5MMEJ1FIWVCAXNHY",
       // add other network's API key here
     },
   },

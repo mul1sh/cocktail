@@ -1,0 +1,371 @@
+{
+  "contractName": "IDeployer",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "bytes",
+          "name": "_initCode",
+          "type": "bytes"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "_salt",
+          "type": "bytes32"
+        }
+      ],
+      "name": "deploy",
+      "outputs": [
+        {
+          "internalType": "address payable",
+          "name": "createdContract",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.7.6+commit.7338295f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"bytes\",\"name\":\"_initCode\",\"type\":\"bytes\"},{\"internalType\":\"bytes32\",\"name\":\"_salt\",\"type\":\"bytes32\"}],\"name\":\"deploy\",\"outputs\":[{\"internalType\":\"address payable\",\"name\":\"createdContract\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/Mocks/IDeployer.sol\":\"IDeployer\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/Mocks/IDeployer.sol\":{\"keccak256\":\"0x215653198855bdcea93b34cf71f790d047230ff36d2f069fcf1fd62f8a3b924e\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://0efbe19a2ba7182f2821d19b68e96a3122b053cc0de84f3595555747868b4256\",\"dweb:/ipfs/QmRPqJEE7gWFF7XUL8XRMpenGvhi1wpXAPKzrWqYv7D6tU\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity ^0.7.0;\n\ninterface IDeployer {\n  function deploy(bytes memory _initCode, bytes32 _salt) external returns (address payable createdContract);\n}\n",
+  "sourcePath": "/Users/mulish/Desktop/juicebox/tornado-core/contracts/Mocks/IDeployer.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/Mocks/IDeployer.sol",
+    "exportedSymbols": {
+      "IDeployer": [
+        2450
+      ]
+    },
+    "id": 2451,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 2440,
+        "literals": [
+          "solidity",
+          "^",
+          "0.7",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:23:12"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 2450,
+        "linearizedBaseContracts": [
+          2450
+        ],
+        "name": "IDeployer",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "4af63f02",
+            "id": 2449,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "deploy",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 2445,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2442,
+                  "mutability": "mutable",
+                  "name": "_initCode",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2449,
+                  "src": "97:22:12",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_memory_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 2441,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "97:5:12",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 2444,
+                  "mutability": "mutable",
+                  "name": "_salt",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2449,
+                  "src": "121:13:12",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 2443,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "121:7:12",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "96:39:12"
+            },
+            "returnParameters": {
+              "id": 2448,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2447,
+                  "mutability": "mutable",
+                  "name": "createdContract",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2449,
+                  "src": "154:31:12",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address_payable",
+                    "typeString": "address payable"
+                  },
+                  "typeName": {
+                    "id": 2446,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "154:15:12",
+                    "stateMutability": "payable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address_payable",
+                      "typeString": "address payable"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "153:33:12"
+            },
+            "scope": 2450,
+            "src": "81:106:12",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 2451,
+        "src": "57:132:12"
+      }
+    ],
+    "src": "32:158:12"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "project:/contracts/Mocks/IDeployer.sol",
+      "exportedSymbols": {
+        "IDeployer": [
+          2450
+        ]
+      },
+      "license": "MIT"
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.7",
+            ".0"
+          ]
+        },
+        "id": 2440,
+        "name": "PragmaDirective",
+        "src": "32:23:12"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "interface",
+          "fullyImplemented": false,
+          "linearizedBaseContracts": [
+            2450
+          ],
+          "name": "IDeployer",
+          "scope": 2451
+        },
+        "children": [
+          {
+            "attributes": {
+              "functionSelector": "4af63f02",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "deploy",
+              "scope": 2450,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "_initCode",
+                      "scope": 2449,
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "type": "bytes",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bytes",
+                          "type": "bytes"
+                        },
+                        "id": 2441,
+                        "name": "ElementaryTypeName",
+                        "src": "97:5:12"
+                      }
+                    ],
+                    "id": 2442,
+                    "name": "VariableDeclaration",
+                    "src": "97:22:12"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "_salt",
+                      "scope": 2449,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bytes32",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bytes32",
+                          "type": "bytes32"
+                        },
+                        "id": 2443,
+                        "name": "ElementaryTypeName",
+                        "src": "121:7:12"
+                      }
+                    ],
+                    "id": 2444,
+                    "name": "VariableDeclaration",
+                    "src": "121:13:12"
+                  }
+                ],
+                "id": 2445,
+                "name": "ParameterList",
+                "src": "96:39:12"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "createdContract",
+                      "scope": 2449,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address payable",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "payable",
+                          "type": "address payable"
+                        },
+                        "id": 2446,
+                        "name": "ElementaryTypeName",
+                        "src": "154:15:12"
+                      }
+                    ],
+                    "id": 2447,
+                    "name": "VariableDeclaration",
+                    "src": "154:31:12"
+                  }
+                ],
+                "id": 2448,
+                "name": "ParameterList",
+                "src": "153:33:12"
+              }
+            ],
+            "id": 2449,
+            "name": "FunctionDefinition",
+            "src": "81:106:12"
+          }
+        ],
+        "id": 2450,
+        "name": "ContractDefinition",
+        "src": "57:132:12"
+      }
+    ],
+    "id": 2451,
+    "name": "SourceUnit",
+    "src": "32:158:12"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.7.6+commit.7338295f.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.8",
+  "updatedAt": "2022-07-14T17:38:12.915Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}
