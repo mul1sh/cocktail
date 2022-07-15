@@ -81,6 +81,7 @@ contract YourContract {
   }
 
   function withdraw(
+    uint256 projectId, 
     bytes calldata _proof,
     bytes32 _root,
     bytes32 _nullifierHash,
@@ -89,6 +90,9 @@ contract YourContract {
     uint256 _fee,
     uint256 _refund
   ) external payable {
+
+
+    
 
   }
 
